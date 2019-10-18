@@ -1,0 +1,23 @@
+<!-- <p>cart-footer works!</p> -->
+<div class="promotion">
+    <label for="promo-code">Have A Promo Code?</label>
+    <input type="text" id="promo-code" /> <button type="button"></button>
+  </div>
+
+  <div class="summary">
+    <ul>
+      <!-- <li>Subtotal <span>${{numSubtotal}}</span></li>
+      <li>Tax <span>${{numTax}}</span></li>
+      <li class="total">Total <span>${{numTotal}}</span></li> -->
+
+      <li>Subtotal <span>{{numSubtotal | currency:'VND':'symbol':'1.1-2':'vi'}} </span></li>
+  
+
+      <li>Tax <span>{{numTax | currency:'VND':'symbol':'1.1-2':'vi'}}</span></li>
+      <li class="total">Total <span>{{numTotal | currency:'VND':'symbol':'1.1-2':'vi'}}</span></li>
+    </ul>
+  </div>
+
+  <div class="checkout">
+    <button type="button">Check Out</button>
+  </div>
