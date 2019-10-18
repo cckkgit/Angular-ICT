@@ -8,15 +8,26 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <main>
   <header class="container">
-     <app-cart-header></app-cart-header> 
+     <app-cart-header [numberItems]="4"
+     >       
+     </app-cart-header> 
  
   </header>
 
   <section class="container">
-    <app-cart-body></app-cart-body>
+    <app-cart-body
+    
+    ></app-cart-body>
   </section>
 
   <section class="container">
-    <app-cart-footer></app-cart-footer>
+    <app-cart-footer
+    
+    [promoCode] : string = '',
+    [numSubtotal] : number = 2000,
+    [numTax] : number = 1111,
+    [numTotal] : number = 33333
+
+    ></app-cart-footer>
   </section>
 </main>
